@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sms_data>
+    <sms>
+        <body>You have received 5000 RWF from Jongkuch Anyar. Transaction ID: 123456. Date: 2024-01-01 10:00:00.</body>
+    </sms>
+    <sms>
+        <body>TxId: 789012. Your payment of 1500 RWF to Thon Chol has been completed. Date: 2024-01-02 14:30:00.</body>
+    </sms>
+    <sms>
+        <body>*162*TxId:345678*S*Your payment of 3000 RWF to Airtime has been completed. Fee: 50 RWF. Date: 2024-01-03 16:00:00.</body>
+    </sms>
+    <sms>
+        <body>You have via agent: deng (250123456789), withdrawn 20000 RWF on 2024-01-04 12:00:00.</body>
+    </sms>
+    <sms>
+        <body>Yello! You have purchased an internet bundle of 1GB for 2000 RWF valid for 30 days.</body>
+    </sms>
+    <sms>
+        <body>You have sent 8000 RWF to 250987654321. Transaction ID: 456789. Date: 2024-01-05 09:15:00.</body>
+    </sms>
+    <sms>
+        <body>Your deposit of 15000 RWF to Bank of Kigali has been processed. TxId: 654321. Date: 2024-01-06 11:45:00.</body>
+    </sms>
+    <sms>
+        <body>Cash Power: You have purchased 5000 RWF electricity units. Meter: 12345. Date: 2024-01-07 08:30:00.</body>
+    </sms>
+    <sms>
+        <body>Third party transaction: 2500 RWF payment initiated by MTN Rwanda. TxId: 987654. Date: 2024-01-08 13:20:00.</body>
+    </sms>
+    <sms>
+        <body>Bank transfer: 12000 RWF transferred to Equity Bank. Reference: EQ789. Date: 2024-01-09 16:10:00.</body>
+    </sms>
+    <sms>
+        <body>Voice bundle purchased: 500 minutes for 1000 RWF. Valid until 2024-02-09. Date: 2024-01-10 07:45:00.</body>
+    </sms>
+    <sms>
+        <body>You have received 3500 RWF from Thon Chol. Transaction ID: 111222. Date: 2024-01-11 12:30:00.</body>
+    </sms>
+    <sms>
+        <body>Payment to merchant: 4500 RWF paid to Shop ABC. Code: SH001. Date: 2024-01-12 14:15:00.</body>
+    </sms>
+    <sms>
+        <body>Agent withdrawal: 25000 RWF withdrawn from agent Jongkuch Anyar (250111222333). Date: 2024-01-13 10:20:00.</body>
+    </sms>
+    <sms>
+        <body>Data bundle: 2GB purchased for 3000 RWF. Valid for 7 days. Date: 2024-01-14 18:00:00.</body>
+    </sms>
+    <sms>
+        <body>You have sent 6500 RWF to 250555666777. Fee: 100 RWF. TxId: 333444. Date: 2024-01-15 09:30:00.</body>
+    </sms>
+    <sms>
+        <body>Airtime purchase: 2000 RWF airtime bought. Date: 2024-01-16 15:45:00.</body>
+    </sms>
+    <sms>
+        <body>Bank deposit successful: 18000 RWF deposited to I&M Bank. Ref: IM456. Date: 2024-01-17 11:00:00.</body>
+    </sms>
+    <sms>
+        <body>Electricity bill: 7500 RWF paid for EUCL. Meter: 67890. Date: 2024-01-18 08:15:00.</body>
+    </sms>
+    <sms>
+        <body>You have received 9500 RWF from Kuer Mayen. Transaction ID: 555666. Date: 2024-01-19 13:45:00.</body>
+    </sms>
+</sms_data>

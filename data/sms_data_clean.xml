@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sms_data>
+    <sms>
+        <body>You have received 5000 RWF from Jongkuch Anyar. Transaction ID: 123456. Date: 2024-01-01 10:00:00.</body>
+    </sms>
+    <sms>
+        <body>TxId: 789012. Your payment of 1500 RWF to Thon Chol has been completed. Date: 2024-01-02 14:30:00.</body>
+    </sms>
+    <sms>
+        <body>Your payment of 3000 RWF to Airtime has been completed. Fee: 50 RWF. Date: 2024-01-03 16:00:00.</body>
+    </sms>
+    <sms>
+        <body>You have via agent: deng (250123456789), withdrawn 20000 RWF on 2024-01-04 12:00:00.</body>
+    </sms>
+    <sms>
+        <body>You have purchased an internet bundle of 1GB for 2000 RWF valid for 30 days.</body>
+    </sms>
+    <sms>
+        <body>You have sent 8000 RWF to 250987654321. Transaction ID: 456789. Date: 2024-01-05 09:15:00.</body>
+    </sms>
+    <sms>
+        <body>Your deposit of 15000 RWF to Bank of Kigali has been processed. TxId: 654321. Date: 2024-01-06 11:45:00.</body>
+    </sms>
+    <sms>
+        <body>Cash Power: You have purchased 5000 RWF electricity units. Meter: 12345. Date: 2024-01-07 08:30:00.</body>
+    </sms>
+    <sms>
+        <body>Third party transaction: 2500 RWF payment initiated by MTN Rwanda. TxId: 987654. Date: 2024-01-08 13:20:00.</body>
+    </sms>
+    <sms>
+        <body>Bank transfer: 12000 RWF transferred to Equity Bank. Reference: EQ789. Date: 2024-01-09 16:10:00.</body>
+    </sms>
+</sms_data>

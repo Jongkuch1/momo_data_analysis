@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTN MoMo Analytics Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="mtn-logo">📱</div>
+            <h1>MTN MoMo Analytics</h1>
+            <p>Mobile Money Transaction Intelligence Dashboard</p>
+            <div class="mtn-tagline">Everywhere you go</div>
+        </header>
+
+        <div class="dashboard-grid">
+            <!-- Statistics Cards -->
+            <div class="stats-section">
+                <div class="stat-card">
+                    <h3>Total Transactions</h3>
+                    <div class="stat-value">1,247</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Amount</h3>
+                    <div class="stat-value">2,450,000 RWF</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Average Transaction</h3>
+                    <div class="stat-value">1,965 RWF</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Largest Transaction</h3>
+                    <div class="stat-value">25,000 RWF</div>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="charts-section">
+                <div class="chart-container">
+                    <h3>Transactions by Type</h3>
+                    <canvas id="typeChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Monthly Transaction Volume</h3>
+                    <canvas id="monthlyChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Filters and Search -->
+            <div class="controls-section">
+                <div class="search-box">
+                    <input type="text" placeholder="Search transactions...">
+                    <button>🔍 Search</button>
+                </div>
+                
+                <div class="filters">
+                    <select>
+                        <option value="">All Transaction Types</option>
+                        <option>Incoming Money</option>
+                        <option>Mobile Transfer</option>
+                        <option>Bank Deposit</option>
+                    </select>
+                    
+                    <input type="date" placeholder="Start Date">
+                    <input type="date" placeholder="End Date">
+                    
+                    <input type="number" placeholder="Min Amount">
+                    <input type="number" placeholder="Max Amount">
+                    
+                    <button>Apply Filters</button>
+                    <button>Clear</button>
+                </div>
+            </div>
+
+            <!-- Transactions Table -->
+            <div class="table-section">
+                <h3>Recent Transactions</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Amount</th>
+                                <th>Details</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024-01-19 13:45</td>
+                                <td><span class="transaction-type type-incoming">Incoming Money</span></td>
+                                <td class="amount">9,500 RWF</td>
+                                <td>From: Jongkuch Anyar</td>
+                                <td><button class="view-btn">View</button></td>
+                            </tr>
+                            <tr>
+                                <td>2024-01-18 08:15</td>
+                                <td><span class="transaction-type type-payment">Bill Payment</span></td>
+                                <td class="amount">7,500 RWF</td>
+                                <td>EUCL Electricity</td>
+                                <td><button class="view-btn">View</button></td>
+                            </tr>
+                            <tr>
+                                <td>2024-01-17 11:00</td>
+                                <td><span class="transaction-type type-deposit">Bank Deposit</span></td>
+                                <td class="amount">18,000 RWF</td>
+                                <td>Bank: I&M Bank</td>
+                                <td><button class="view-btn">View</button></td>
+                            </tr>
+                            <tr>
+                                <td>2024-01-16 15:45</td>
+                                <td><span class="transaction-type type-payment">Airtime Purchase</span></td>
+                                <td class="amount">2,000 RWF</td>
+                                <td>Airtime Top-up</td>
+                                <td><button class="view-btn">View</button></td>
+                            </tr>
+                            <tr>
+                                <td>2024-01-15 09:30</td>
+                                <td><span class="transaction-type type-transfer">Mobile Transfer</span></td>
+                                <td class="amount">6,500 RWF</td>
+                                <td>To: 250555666777</td>
+                                <td><button class="view-btn">View</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Demo charts with MTN styling
+        document.addEventListener('DOMContentLoaded', function() {
+            // Type Chart
+            const typeCtx = document.getElementById('typeChart').getContext('2d');
+            new Chart(typeCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Incoming Money', 'Mobile Transfer', 'Bank Deposit', 'Bill Payment', 'Airtime'],
+                    datasets: [{
+                        data: [35, 25, 20, 15, 5],
+                        backgroundColor: ['#FFCB05', '#FFA500', '#FF8C00', '#1a1a1a', '#333333'],
+                        borderWidth: 3,
+                        borderColor: '#fff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                padding: 20,
+                                usePointStyle: true,
+                                font: { weight: 'bold' }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Monthly Chart
+            const monthlyCtx = document.getElementById('monthlyChart').getContext('2d');
+            new Chart(monthlyCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    datasets: [{
+                        label: 'Transaction Count',
+                        data: [120, 150, 180, 200, 165, 190],
+                        backgroundColor: 'rgba(255, 203, 5, 0.8)',
+                        borderColor: 'rgba(255, 203, 5, 1)',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: 'rgba(0,0,0,0.1)' },
+                            ticks: { font: { weight: 'bold' } }
+                        },
+                        x: {
+                            grid: { color: 'rgba(0,0,0,0.1)' },
+                            ticks: { font: { weight: 'bold' } }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: { font: { weight: 'bold' } }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
