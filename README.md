@@ -188,7 +188,7 @@ CREATE TABLE transactions (
 
 ## 🎥 Video Demonstration
 
-**[📹 Watch 5-Minute Demo Video](https://your-video-link-here)**
+**[📹 Watch 5-Minute Demo Video]. 
 
 The video demonstration covers:
 - System overview and MTN-styled dashboard
@@ -268,11 +268,11 @@ The project includes sample XML data with 20 diverse transaction examples coveri
 
 ## 👥 Authors
 
-**[Your Name]**
-- 📧 Email: [your.email@example.com]
-- 🐙 GitHub: [your-github-username]
-- 💼 LinkedIn: [your-linkedin-profile]
-- 🎓 Institution: [Your University/School]
+**Jongkuch Isaac Chol Anyar**
+- 📧 Email: j.anyar@alustudent.com
+- 🐙 GitHub: https://github.com/Jongkuch1/
+- 💼 LinkedIn: https://www.linkedin.com/in/jongkuch-anyar-36535131b/
+- 🎓 Institution: African Leadership University
 
 ## 🎨 MTN Branding
 
